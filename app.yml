@@ -1,0 +1,41 @@
+# GitHub App 配置文件
+# 用于 Issues-bot GitHub App 的基本配置
+
+# GitHub App 订阅的事件列表
+default_events:
+  - issues
+  - issue_comment
+  - pull_request
+
+# GitHub App 需要的权限设置
+default_permissions:
+  # Issues 和相关评论、标签等的读写权限
+  issues: write
+  
+  # 仓库内容（文件、提交等）的读写权限，用于自动修复
+  contents: write
+  
+  # Pull requests 权限，用于创建自动修复 PR
+  pull_requests: write
+  
+  # 仓库元数据读取权限
+  metadata: read
+  
+  # 检查运行权限（可选，用于 CI 集成）
+  # checks: write
+  
+  # 状态权限（可选，用于状态更新）
+  # statuses: write
+
+# GitHub App 基本信息
+name: Issues-bot
+description: 'AI-powered GitHub Issues automation solution - 智能 GitHub Issues 自动化解决方案'
+url: https://github.com/your-username/issues-bot
+setup_url: https://github.com/your-username/issues-bot/blob/main/README.md
+
+# 设置为 public，使其他用户可以安装
+public: true
+
+# 默认安装权限
+default_installations:
+  repositories: selected
