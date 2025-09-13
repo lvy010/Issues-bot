@@ -196,8 +196,6 @@ npm run type-check
 
 ## 🙏 致谢
 
-- 基于 [ChatGPT-CodeReview](https://github.com/anc95/ChatGPT-CodeReview) 项目构建
-- 感谢 OpenAI 提供的 AI 能力支持
 - 感谢 GitHub 提供的开放 API
 
 ---
